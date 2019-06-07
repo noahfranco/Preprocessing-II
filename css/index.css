@@ -1,28 +1,23 @@
 @media (max-width: 500px) {
-  .item {
+  .navContainer nav {
     display: flex;
-    justify-content: center;
-    margin: 2rem;
-    justify-content: flex-start;
-    border-bottom: dashed lightgray;
-    padding: 1.3rem;
+    flex-direction: column;
+    align-items: center;
   }
-  .test {
-    margin: 2rem;
-    border-bottom: dashed lightgray;
-    padding: 1.5rem;
-    background: red;
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .btn {
-    background: #17A2B8;
-    border-radius: 1.5rem;
-    color: white;
-    padding: 15px 34px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 16px;
-    padding: 1.2rem;
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .displayflex {
@@ -48,6 +43,16 @@
   display: inline;
   font-size: 16px;
   padding: 1.2rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.columnreverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -226,6 +231,16 @@ img {
   justify-content: flex-start;
   border-bottom: dashed lightgray;
   padding: 1.3rem;
+}
+.navcontainer {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navContainer nav {
+  display: flex;
 }
 .navAnchors {
   width: 50%;

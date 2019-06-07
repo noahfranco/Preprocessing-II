@@ -26,20 +26,36 @@
 // style 
 @borderbottom: dashed lightgray;
 
+// flex-direction 
+@column: column; 
+@columnreverse: column-reverse;  
+
+
+
+
 // mobile 
 @mobile : ~"(max-width: 500px)"; 
 @media @mobile {
-    .item {
-        .displayflex(); 
+    .navContainer  {
+        nav {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+        }
     }
-    .test {
-        .header(); 
-        background: red; 
-      }
-      .btn {
-        .buttons(); 
-      }
     
+    .content-section  {
+        .column(); 
+    }
+
+    .inverse-content {
+        .columnreverse(); 
+    }
+
+    .content-pick {
+        .column(); 
+    }
+
 }
 
 
