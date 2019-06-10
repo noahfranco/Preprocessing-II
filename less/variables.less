@@ -12,3 +12,53 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// Display Flex
+@flex: flex; 
+@justifycenter: center; 
+@aligncenter: center; 
+@flexstart: flex-start; 
+
+// margins & padding 
+@1rem: 1rem; 
+@2rem: 2rem; 
+
+// style 
+@borderbottom: dashed lightgray;
+
+// flex-direction 
+@column: column; 
+@columnreverse: column-reverse;  
+
+
+
+
+// mobile 
+@mobile : ~"(max-width: 500px)"; 
+@media @mobile {
+    .navContainer  {
+        nav {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+        }
+    }
+    
+    .content-section  {
+        .column(); 
+    }
+
+    .inverse-content {
+        .columnreverse(); 
+    }
+
+    .content-pick {
+        .column(); 
+    }
+
+}
+
+
+
+
+
